@@ -1,5 +1,9 @@
 <?php
+<<<<<<< HEAD
 define('BASE_URL', 'http://localhost/programa2/');
+=======
+define('BASE_URL', 'http://localhost/proyecto-dsa/');
+>>>>>>> 4bd51ca (otro cambio)
 define('HOST', 'localhost');
 define('USER', 'root');
 define('PASS', '');
