@@ -11,7 +11,8 @@
 
 2. Descargar o clonar el repositorio de GitHub.
 
-// INSERTAR IMAGEN CLONE
+<img src="https://i.imgur.com/agz3sPe.png" style="max-width: 500px; width: 100%; height: auto; padding-bottom: 50px;" alt="XAMPP" />  
+
 
 3. Una vez descargado o clonado el repositorio, hay que asegurarse que la carpeta del proyecto se encuentre en la ruta:
 ```
