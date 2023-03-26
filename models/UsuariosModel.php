@@ -5,7 +5,14 @@ class UsuariosModel extends Query{
     }
    public function getUsuarios($estado)
     {
-        $sql = "SELECT id, CONCAT(nombre, ' ', apellido) AS nombres, ci, correo, telefono, direccion, rol FROM usuarios WHERE estado = $estado";
+        $idSucursal = $_SESSION['sucursal'];
+        $sql = '';
+        if(0 == 0 ){
+            $sql = "SELECT id, CONCAT(nombre, ' ', apellido) AS nombres, ci, correo, telefono, direccion, rol FROM usuarios";
+        }else {
+            $sql = "SELECT id, CONCAT(nombre, ' ', apellido) AS nombres, ci, correo, telefono, direccion, rol FROM usuarios WHERE id_sucursal = $idSucursal";
+        }
+        
         return $this->selectAll($sql);
     }
     public function registrar($ci, $nombres, $apellidos, $correo, 

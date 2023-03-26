@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 26-03-2023 a las 20:36:51
+-- Tiempo de generación: 26-03-2023 a las 20:58:32
 -- Versión del servidor: 10.4.27-MariaDB
 -- Versión de PHP: 8.2.0
 
@@ -250,7 +250,8 @@ INSERT INTO `acceso` (`id`, `evento`, `ip`, `detalle`, `fecha`) VALUES
 (144, 'Cierre de Sesión', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 OPR/96.0.0.0', '2023-03-26 17:59:16'),
 (145, 'Inicio de Sesión', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 OPR/96.0.0.0', '2023-03-26 17:59:22'),
 (146, 'Inicio de Sesión', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 OPR/96.0.0.0', '2023-03-26 18:23:45'),
-(147, 'Cierre de Sesión', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 OPR/96.0.0.0', '2023-03-26 18:24:34');
+(147, 'Cierre de Sesión', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 OPR/96.0.0.0', '2023-03-26 18:24:34'),
+(148, 'Inicio de Sesión', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 OPR/96.0.0.0', '2023-03-26 18:55:16');
 
 -- --------------------------------------------------------
 
@@ -1199,7 +1200,7 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id`, `ci`, `nombre`, `apellido`, `correo`, `telefono`, `direccion`, `perfil`, `clave`, `token`, `fecha`, `estado`, `rol`, `id_sucursal`) VALUES
-(1, '22590454', 'GARIC DIAZ', 'INGSHOP', 'ingshopve@gmail.com', '04249219865', 'CC. Los Olivos local 12. Puerto Ordaz- Estado Bolivar', NULL, '$2y$10$CZPm1Z7dyXxSs.l2Oxy3relCxmqejDh6HoBq2rH79U8IRXrOqj2Ju', NULL, '2023-03-26 17:07:46', 0, 1, 0),
+(1, '22590454', 'DAVID', 'GAMBOA', 'davidgerente@dsaimports.com', '04249219865', 'Barcelona', NULL, '$2y$10$CZPm1Z7dyXxSs.l2Oxy3relCxmqejDh6HoBq2rH79U8IRXrOqj2Ju', NULL, '2023-03-26 18:58:11', 0, 3, 2),
 (5, '1', 'ENRIQUE', 'LEON', 'vendedorudo@dsaimports.com', '12345', 'Barcelona', NULL, '$2y$10$.b7Gv2ZatHbxALXd0ZpC9uladHTI.B.HHRhas/ZCJsUaKxcfhIpbu', NULL, '2023-03-26 17:58:19', 1, 2, 2),
 (8, '23445665', 'VICTOR', 'MUJICA', 'vmujica@dsaimports.com', '04147877576', 'Puerto La Cruz', NULL, '$2y$10$9NfaSxncY3ASQyXqt1WN7.3wybUDDXgxGZ0gHb7faaZWzUgU87Dd6', NULL, '2023-03-26 17:56:46', 1, 1, 0),
 (9, '22222222', 'SOFIA', 'DUARTE', 'cobradorudo@dsaimports.com', '04615357', 'PLC', NULL, '$2y$10$XN5oF.ZZjHpb2UXHPuN6YOaFq6AM2BOD20LEhA/AJButOBY5KeWXm', NULL, '2023-03-26 17:59:03', 1, 4, 1),
@@ -1523,7 +1524,7 @@ ALTER TABLE `abonos`
 -- AUTO_INCREMENT de la tabla `acceso`
 --
 ALTER TABLE `acceso`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=148;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=149;
 
 --
 -- AUTO_INCREMENT de la tabla `apartados`
