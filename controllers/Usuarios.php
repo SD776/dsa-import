@@ -73,6 +73,8 @@ class Usuarios extends Controller
                 $res = array('msg' => 'LA CONTRASEÑA ES REQUERIDA', 'type' => 'warning');
             } else if (empty($_POST['rol'])) {
                 $res = array('msg' => 'EL ROL ES REQUERIDO', 'type' => 'warning');
+            } else if (empty($_POST['sucursal'])) {
+                $res = array('msg' => 'LA SUCURSAL ES REQUERIDA', 'type' => 'warning');
             } else {
                 $ci = strClean($_POST['ci']);
                 $nombres = strClean($_POST['nombres']);
@@ -82,6 +84,7 @@ class Usuarios extends Controller
                 $direccion = strClean($_POST['direccion']);
                 $contraseña = strClean($_POST['contraseña']);
                 $rol = strClean($_POST['rol']);
+                $sucursal = strClean($_POST['sucursal']);
                 $id = strClean($_POST['id']);
 
                 if ($id == '') {
@@ -102,7 +105,8 @@ class Usuarios extends Controller
                                     $telefono,
                                     $direccion,
                                     $hash,
-                                    $rol
+                                    $rol,
+                                    $sucursal
                                 );
                                 if ($data > 0) {
                                     $res = array('msg' => 'USUARIO REGISTRADO', 'type' => 'success');

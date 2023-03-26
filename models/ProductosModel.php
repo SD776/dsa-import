@@ -10,7 +10,12 @@ class ProductosModel extends Query
 
     public function getProductos($estado)
     {
-        $sql = "SELECT p.*, m.medida, c.categoria FROM productos p INNER JOIN medidas m ON p.id_medida = m.id INNER JOIN categorias c ON p.id_categoria = c.id WHERE p.estado = $estado";
+        $idSucursal = $_SESSION['sucursal'];
+        if($idSucursal == 0)
+            $sql = "SELECT p.*, m.medida, c.categoria FROM productos p INNER JOIN medidas m ON p.id_medida = m.id INNER JOIN categorias c ON p.id_categoria = c.id WHERE p.estado = $estado";
+        else
+            $sql = "SELECT p.*, m.medida, c.categoria FROM productos p INNER JOIN medidas m ON p.id_medida = m.id INNER JOIN categorias c ON p.id_categoria = c.id WHERE p.estado = $estado AND p.id_sucursal = $idSucursal";
+        
         return $this->selectAll($sql);
     }
 
@@ -29,10 +34,11 @@ class ProductosModel extends Query
         $id_categoria,
         $foto
     ) {
-        $sql = "INSERT INTO productos (codigo, descripcion, precio_compra, precio_venta, id_medida, id_categoria, foto) VALUES (?,?,?,?,?,?,?)";
+        $sucursal = $_SESSION['sucursal'];
+        $sql = "INSERT INTO productos (codigo, descripcion, precio_compra, precio_venta, id_medida, id_categoria, foto,id_sucursal) VALUES (?,?,?,?,?,?,?,?)";
         $array = array(
             $codigo, $nombre, $precio_compra, $precio_venta,
-            $id_medida, $id_categoria, $foto
+            $id_medida, $id_categoria, $foto, $sucursal
         );
         return $this->insertar($sql, $array);
     }

@@ -166,7 +166,21 @@ return false;
                             </div>
                             <span id="errorRol" class="text-danger"></span>
                         </div>
+                        <div class="col-lg-4 col-sm-6 mb-2">
+                            <label>Sucursal</label>
+                            <div class="input-group ">
+                                <label class="input-group-text" for="sucursal"><i class="fa-solid fa-home"></i></label>
+                                <select class="form-select" id="sucursal" name="sucursal">
+                                    <option value="" selected>Seleccionar</option>
+                                    <option value="1">CARACAS</option>
+                                    <option value="2">PUERTO LA CRUZ</option>
+                                    <option value="3">CUMANÁ</option>
+                                </select>
+                            </div>
+                            <span id="errorSucursal" class="text-danger"></span>
+                        </div>
                     </div>
+                     
                     <div class="text-end">
                         <button class="btn btn-danger" type="button" id="btnNuevo">Nuevo</button>
                         <button class="btn btn-primary" type="submit" id="btnAccion">Registrar</button>

@@ -6,7 +6,7 @@ class PrincipalModel extends Query{
     //datos para login
     public function getDatos($correo)
     {
-        $sql = "SELECT id, nombre, correo, perfil, clave, rol, estado FROM usuarios WHERE correo = '$correo'";
+        $sql = "SELECT id, nombre, correo, perfil, clave, rol, estado, id_sucursal FROM usuarios WHERE correo = '$correo'";
         return $this->select($sql);
     }
     public function verificarCorreo($correo)

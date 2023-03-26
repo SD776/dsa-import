@@ -3,7 +3,7 @@ define('BASE_URL', 'http://localhost/proyecto-dsa/');
 define('HOST', 'localhost');
 define('USER', 'root');
 define('PASS', '');
-define('DBNAME', 'sistema');
+define('DBNAME', 'sistema-mod');
 define('CHARSET', '');
 define('TITLE', 'DSA Imports');
 define('MONEDA', '$');

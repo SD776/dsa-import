@@ -4,13 +4,18 @@ class InventariosModel extends Query{
         parent::__construct();
     }
     public function getMovimientos($id_usuario)
-    {
-        $sql = "SELECT i.*, p.descripcion FROM inventario i INNER JOIN productos p ON i.id_producto = p.id WHERE i.id_usuario = $id_usuario";
+    {   
+        $sql = '';
+        $sucursal = $_SESSION['sucursal'];
+        if($sucursal == 0)
+            $sql = "SELECT i.*, p.descripcion FROM inventario i INNER JOIN productos p ON i.id_producto = p.id";
+        else
+            $sql = "SELECT i.*, p.descripcion FROM inventario i INNER JOIN productos p ON i.id_producto = p.id WHERE i.id_sucursal = $sucursal AND p.id_sucursal = $sucursal";
         return $this->selectAll($sql);
     }
     public function getMovimientosMes($anio, $mes, $id_usuario)
     {
-        $sql = "SELECT i.*, p.descripcion FROM inventario i INNER JOIN productos p ON i.id_producto = p.id WHERE MONTH(i.fecha) = $mes AND YEAR(i.fecha) = $anio AND i.id_usuario = $id_usuario";
+        $sql = "SELECT i.*, p.descripcion FROM inventario i INNER JOIN productos p ON i.id_producto = p.id WHERE MONTH(i.fecha) = $mes AND YEAR(i.fecha) = $anio";
         return $this->selectAll($sql);
     }
 

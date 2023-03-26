@@ -30,6 +30,16 @@ class Principal extends Controller
                 $correo = strClean($_POST['correo']);
                 $clave = strClean($_POST['clave']);
                 $data = $this->model->getDatos($correo);
+                $idSucursal = $data['id_sucursal'];
+                $nombreSucursal = '';
+                if($idSucursal == 0)
+                    $nombreSucursal = 'OFICINA CENTRAL';
+                elseif($idSucursal == 1)
+                    $nombreSucursal = 'CARACAS';
+                elseif($idSucursal == 2)
+                    $nombreSucursal = 'PTO LA CRUZ';
+                elseif($idSucursal == 3)
+                    $nombreSucursal = 'CUMANÁ';                    
                 if (empty($data)) {
                     $res = array('msg' => 'EL CORREO NO EXISTE', 'type' => 'warning');
                 }else{
@@ -40,6 +50,8 @@ class Principal extends Controller
                             $_SESSION['correo_usuario'] = $data['correo'];
                             $_SESSION['perfil_usuario'] = $data['perfil'];
                             $_SESSION['rol'] = $data['rol'];
+                            $_SESSION['sucursal'] = $idSucursal;
+                            $_SESSION['nombre_sucursal'] = $nombreSucursal;
                             $evento = 'Inicio de Sesión';
                             $ip = $_SERVER['REMOTE_ADDR'];
                             $detalle = $_SERVER['HTTP_USER_AGENT'];

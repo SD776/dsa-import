@@ -5,15 +5,20 @@ class ClientesModel extends Query{
     }
     public function getClientes($estado)
     {
-        $sql = "SELECT * FROM clientes WHERE estado = $estado";
+        $idSucursal = $_SESSION['sucursal'];
+        if($idSucursal == 0)
+            $sql = "SELECT * FROM clientes WHERE estado = $estado";
+        else
+            $sql = "SELECT * FROM clientes WHERE estado = $estado AND id_sucursal = $idSucursal";
         return $this->selectAll($sql);
     }
     public function registrar($identidad, $num_ci, $nombre,
     $telefono, $correo, $direccion)
     {
-        $sql = "INSERT INTO clientes (identidad, num_ci, nombre, telefono, correo, direccion) VALUES (?,?,?,?,?,?)";
+        $sql = "INSERT INTO clientes (identidad, num_ci, nombre, telefono, correo, direccion,id_sucursal) VALUES (?,?,?,?,?,?,?)";
+        $sucursalCliente = $_SESSION['sucursal'];
         $array = array($identidad, $num_ci, $nombre,
-        $telefono, $correo, $direccion);
+        $telefono, $correo, $direccion,$sucursalCliente);
         return $this->insertar($sql, $array);
     }
 

@@ -1,3 +1,9 @@
+<?php 
+	$nombreSesion = ''; 
+	if(!$_SESSION['sucursal']==0)
+		$nombreSesion = 'Sucursal: '; 
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -42,7 +48,7 @@
 					<img src="<?php echo BASE_URL; ?>assets/images/logopng.png" class="logo-icon" alt="logo icon">
 				</div>
 				<div>
-					<h4 class="logo-text">DSA Import</h4>
+					<h4 class="logo-text"><?= $nombreSesion; ?> <?= $_SESSION['nombre_sucursal']; ?></h4>
 				</div>
 				<div class="toggle-icon ms-auto"><i class='bx bx-arrow-to-left'></i>
 				</div>
