@@ -2,10 +2,10 @@
 -- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Servidor: localhost
--- Tiempo de generación: 26-03-2023 a las 03:32:15
+-- Servidor: 127.0.0.1
+-- Tiempo de generación: 26-03-2023 a las 20:36:51
 -- Versión del servidor: 10.4.27-MariaDB
--- Versión de PHP: 8.0.25
+-- Versión de PHP: 8.2.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `sistema`
+-- Base de datos: `sistema-mod`
 --
 
 -- --------------------------------------------------------
@@ -215,7 +215,42 @@ INSERT INTO `acceso` (`id`, `evento`, `ip`, `detalle`, `fecha`) VALUES
 (109, 'Cierre de Sesión', '::1', 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36', '2023-03-25 21:55:17'),
 (110, 'Inicio de Sesión', '::1', 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36', '2023-03-25 21:55:46'),
 (111, 'Cierre de Sesión', '::1', 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36', '2023-03-25 21:58:56'),
-(112, 'Inicio de Sesión', '::1', 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36', '2023-03-25 21:59:06');
+(112, 'Inicio de Sesión', '::1', 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36', '2023-03-25 21:59:06'),
+(113, 'Inicio de Sesión', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 OPR/96.0.0.0', '2023-03-26 02:14:50'),
+(114, 'Inicio de Sesión', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 OPR/96.0.0.0', '2023-03-26 02:26:41'),
+(115, 'Cierre de Sesión', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 OPR/96.0.0.0', '2023-03-26 02:31:15'),
+(116, 'Inicio de Sesión', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 OPR/96.0.0.0', '2023-03-26 02:31:20'),
+(117, 'Inicio de Sesión', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 OPR/96.0.0.0', '2023-03-26 03:39:36'),
+(118, 'Inicio de Sesión', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 OPR/96.0.0.0', '2023-03-26 03:40:47'),
+(119, 'Inicio de Sesión', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 OPR/96.0.0.0', '2023-03-26 03:43:50'),
+(120, 'Cierre de Sesión', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 OPR/96.0.0.0', '2023-03-26 03:45:01'),
+(121, 'Inicio de Sesión', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 OPR/96.0.0.0', '2023-03-26 03:45:15'),
+(122, 'Cierre de Sesión', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 OPR/96.0.0.0', '2023-03-26 03:45:40'),
+(123, 'Inicio de Sesión', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 OPR/96.0.0.0', '2023-03-26 03:52:20'),
+(124, 'Cierre de Sesión', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 OPR/96.0.0.0', '2023-03-26 03:55:16'),
+(125, 'Inicio de Sesión', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 OPR/96.0.0.0', '2023-03-26 03:58:59'),
+(126, 'Cierre de Sesión', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 OPR/96.0.0.0', '2023-03-26 03:59:39'),
+(127, 'Inicio de Sesión', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 OPR/96.0.0.0', '2023-03-26 03:59:50'),
+(128, 'Cierre de Sesión', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 OPR/96.0.0.0', '2023-03-26 04:06:44'),
+(129, 'Inicio de Sesión', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 OPR/96.0.0.0', '2023-03-26 04:06:48'),
+(130, 'Cierre de Sesión', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 OPR/96.0.0.0', '2023-03-26 04:07:18'),
+(131, 'Inicio de Sesión', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 OPR/96.0.0.0', '2023-03-26 04:07:28'),
+(132, 'Cierre de Sesión', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 OPR/96.0.0.0', '2023-03-26 04:08:48'),
+(133, 'Inicio de Sesión', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 OPR/96.0.0.0', '2023-03-26 04:08:59'),
+(134, 'Cierre de Sesión', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 OPR/96.0.0.0', '2023-03-26 04:11:02'),
+(135, 'Inicio de Sesión', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 OPR/96.0.0.0', '2023-03-26 04:11:18'),
+(136, 'Inicio de Sesión', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 OPR/96.0.0.0', '2023-03-26 17:04:01'),
+(137, 'Cierre de Sesión', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 OPR/96.0.0.0', '2023-03-26 17:06:45'),
+(138, 'Inicio de Sesión', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 OPR/96.0.0.0', '2023-03-26 17:07:07'),
+(139, 'Cierre de Sesión', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 OPR/96.0.0.0', '2023-03-26 17:08:11'),
+(140, 'Inicio de Sesión', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 OPR/96.0.0.0', '2023-03-26 17:08:31'),
+(141, 'Cierre de Sesión', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 OPR/96.0.0.0', '2023-03-26 17:39:44'),
+(142, 'Inicio de Sesión', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 OPR/96.0.0.0', '2023-03-26 17:39:52'),
+(143, 'Inicio de Sesión', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 OPR/96.0.0.0', '2023-03-26 17:44:58'),
+(144, 'Cierre de Sesión', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 OPR/96.0.0.0', '2023-03-26 17:59:16'),
+(145, 'Inicio de Sesión', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 OPR/96.0.0.0', '2023-03-26 17:59:22'),
+(146, 'Inicio de Sesión', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 OPR/96.0.0.0', '2023-03-26 18:23:45'),
+(147, 'Cierre de Sesión', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 OPR/96.0.0.0', '2023-03-26 18:24:34');
 
 -- --------------------------------------------------------
 
@@ -398,7 +433,7 @@ CREATE TABLE `configuracion` (
 --
 
 INSERT INTO `configuracion` (`id`, `rif`, `nombre`, `telefono`, `correo`, `direccion`, `mensaje`, `impuesto`) VALUES
-(1, 502226605, 'INGSHOP', '04249219865', 'ingshopve@gmail.com', 'CC. Los Olivos local 12. Puerto Ordaz- Estado Bolivar', '<p>Somos tienda fisica en Puerto Ordaz. Productos importados con los mejores precios del mercado.</p>', 0);
+(1, 2147483647, 'DSA IMPORT', '04249219865', 'dsaimport@gmail.com', 'Barcelona', '<p>&nbsp;Productos importados con los mejores precios del mercado.</p>', 0);
 
 -- --------------------------------------------------------
 
@@ -901,7 +936,8 @@ INSERT INTO `inventario` (`id`, `movimiento`, `accion`, `cantidad`, `stock_Actua
 (331, 'Ajuste de Inventario: salida', 'salida', 6, 20, '2023-03-25 20:32:00', 30, 1, 1),
 (332, 'Venta N°: 143', 'salida', 3, -2, '2023-03-25 20:32:00', 33, 1, 1),
 (333, 'Venta N°: 144', 'salida', 1, -1, '2023-03-25 20:32:00', 58, 1, 1),
-(334, 'Venta N°: 145', 'salida', 1, 202, '2023-03-25 20:32:00', 9, 1, 1);
+(334, 'Venta N°: 145', 'salida', 1, 202, '2023-03-25 20:32:00', 9, 1, 1),
+(335, 'Venta N°: 146', 'salida', 1, 83, '2023-03-26 17:40:22', 6, 5, NULL);
 
 -- --------------------------------------------------------
 
@@ -958,7 +994,7 @@ INSERT INTO `productos` (`id`, `codigo`, `descripcion`, `precio_compra`, `precio
 (3, '0081', 'SPEED MAX', '0.43', '1.00', 65, NULL, 1, '2023-03-25 20:59:05', 12, 2, 1, 1),
 (4, '0084', 'JIF MANÍ (454G)', '2.50', '5.00', 2, NULL, 1, '2023-03-25 20:59:05', 2, 3, 2, 1),
 (5, '4400003211', 'CHIPS AHOY MINI 99', '1.48', '3.00', 6, NULL, 0, '2023-03-25 20:59:05', 0, 3, 2, 1),
-(6, '0001', 'BATIDO PROTEINA', '1.00', '3.00', 85, NULL, 1, '2023-03-25 20:59:05', 15, 2, 1, 1),
+(6, '0001', 'BATIDO PROTEINA', '1.00', '3.00', 84, NULL, 1, '2023-03-26 17:40:22', 16, 2, 1, 1),
 (7, '0002', 'CAFE NEGRO', '0.08', '0.20', 72, NULL, 1, '2023-03-25 20:59:05', 28, 2, 3, 1),
 (8, '0113', 'COFFE MATE', '3.00', '0.50', 0, NULL, 1, '2023-03-25 20:59:05', 0, 2, 3, 1),
 (9, '0003', 'BATIDO PROTEINA EXTRA', '2.00', '3.25', 203, NULL, 1, '2023-03-25 20:59:05', 22, 2, 1, 1),
@@ -1163,10 +1199,11 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id`, `ci`, `nombre`, `apellido`, `correo`, `telefono`, `direccion`, `perfil`, `clave`, `token`, `fecha`, `estado`, `rol`, `id_sucursal`) VALUES
-(1, '22590454', 'GARIC DIAZ', 'INGSHOP', 'ingshopve@gmail.com', '04249219865', 'CC. Los Olivos local 12. Puerto Ordaz- Estado Bolivar', NULL, '$2y$10$CZPm1Z7dyXxSs.l2Oxy3relCxmqejDh6HoBq2rH79U8IRXrOqj2Ju', NULL, '2023-03-25 18:46:01', 1, 1, 0),
-(5, '1', 'ENRIQUE', 'LEON', 'enrique@gmail.com', '12345', 'calle', NULL, '$2y$10$.b7Gv2ZatHbxALXd0ZpC9uladHTI.B.HHRhas/ZCJsUaKxcfhIpbu', NULL, '2023-03-25 17:55:59', 1, 2, 1),
-(6, '12345', 'DASDA', 'DASDA', 'ADA@GMAIL.COM', '123', 'ASDA', NULL, '$2y$10$8kr0FcQ4H0BETc/haX7mYulva7FD8g2AlKLqgqOmzfGqKnlPxS0YO', NULL, '2023-03-25 19:41:00', 1, 3, NULL),
-(7, '30102', 'GERENTE', 'SUCURSAL', 'gerentesucursal@gmail.com', '11111', 'gerente de los gerentes', NULL, '$2y$10$CZbTyUbrhcH5UAWmIUQcOODPmgCuziVB5JXLUNaHIG3lQrV8EQcY6', NULL, '2023-03-25 21:55:24', 1, 1, 2);
+(1, '22590454', 'GARIC DIAZ', 'INGSHOP', 'ingshopve@gmail.com', '04249219865', 'CC. Los Olivos local 12. Puerto Ordaz- Estado Bolivar', NULL, '$2y$10$CZPm1Z7dyXxSs.l2Oxy3relCxmqejDh6HoBq2rH79U8IRXrOqj2Ju', NULL, '2023-03-26 17:07:46', 0, 1, 0),
+(5, '1', 'ENRIQUE', 'LEON', 'vendedorudo@dsaimports.com', '12345', 'Barcelona', NULL, '$2y$10$.b7Gv2ZatHbxALXd0ZpC9uladHTI.B.HHRhas/ZCJsUaKxcfhIpbu', NULL, '2023-03-26 17:58:19', 1, 2, 2),
+(8, '23445665', 'VICTOR', 'MUJICA', 'vmujica@dsaimports.com', '04147877576', 'Puerto La Cruz', NULL, '$2y$10$9NfaSxncY3ASQyXqt1WN7.3wybUDDXgxGZ0gHb7faaZWzUgU87Dd6', NULL, '2023-03-26 17:56:46', 1, 1, 0),
+(9, '22222222', 'SOFIA', 'DUARTE', 'cobradorudo@dsaimports.com', '04615357', 'PLC', NULL, '$2y$10$XN5oF.ZZjHpb2UXHPuN6YOaFq6AM2BOD20LEhA/AJButOBY5KeWXm', NULL, '2023-03-26 17:59:03', 1, 4, 1),
+(10, '2333455', 'ANGEL', 'MOUZABER', 'gerentudo@dsaimports.com', '04245567789', 'Puerto La Cruz 1', NULL, '$2y$10$Eto120Sla2sASDhu8RWylOXWowj2ZzHu59ZyeQauRIgGCuYJpxSbG', NULL, '2023-03-26 17:57:40', 1, 3, 1);
 
 -- --------------------------------------------------------
 
@@ -1337,7 +1374,8 @@ INSERT INTO `ventas` (`id`, `productos`, `total`, `fecha`, `metodo`, `descuento`
 (142, '[{\"id\":\"59\",\"nombre\":\"PROTEINA MUSCLETECH (4LB)\",\"precio\":\"75.00\",\"cantidad\":1},{\"id\":\"15\",\"nombre\":\"MUSCLETECH CELL TECH (120 SERV\",\"precio\":\"35.00\",\"cantidad\":1},{\"id\":\"44\",\"nombre\":\"GUANTES\",\"precio\":\"15.00\",\"cantidad\":1},{\"id\":\"114\",\"nombre\":\"NEUTROGENA ULTRA SHEER 75\",\"precio\":\"15.00\",\"cantidad\":1},{\"id\":\"108\",\"nombre\":\"TRESEMM\\u00c9 (COMBO (2))\",\"precio\":\"18.00\",\"cantidad\":1}]', '158.00', '2023-03-21 04:00:00', 'CREDITO', '10.00', '0142', 1, 1, 12, 1),
 (143, '[{\"id\":33,\"nombre\":\"DYMATIZED (20 SERV)\",\"precio\":\"40.00\",\"cantidad\":\"3\"}]', '120.00', '2023-03-21 04:00:00', 'CONTADO', '0.00', '0143', 1, 1, 12, 1),
 (144, '[{\"id\":\"58\",\"nombre\":\"GLUC\\u00d3METRO\",\"precio\":\"40.00\",\"cantidad\":1}]', '40.00', '2023-03-25 04:00:00', 'CONTADO', '0.00', '0144', 1, 1, 1, 1),
-(145, '[{\"id\":\"9\",\"nombre\":\"BATIDO PROTEINA EXTRA\",\"precio\":\"3.25\",\"cantidad\":1}]', '3.25', '2023-03-25 04:00:00', 'CONTADO', '0.00', '0145', 1, 1, 24, 1);
+(145, '[{\"id\":\"9\",\"nombre\":\"BATIDO PROTEINA EXTRA\",\"precio\":\"3.25\",\"cantidad\":1}]', '3.25', '2023-03-25 04:00:00', 'CONTADO', '0.00', '0145', 1, 1, 24, 1),
+(146, '[{\"id\":6,\"nombre\":\"BATIDO PROTEINA\",\"precio\":\"3.00\",\"cantidad\":1}]', '3.00', '2023-03-26 04:00:00', 'CONTADO', '0.00', '0146', 1, 1, 5, 5);
 
 --
 -- Índices para tablas volcadas
@@ -1485,7 +1523,7 @@ ALTER TABLE `abonos`
 -- AUTO_INCREMENT de la tabla `acceso`
 --
 ALTER TABLE `acceso`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=113;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=148;
 
 --
 -- AUTO_INCREMENT de la tabla `apartados`
@@ -1545,7 +1583,7 @@ ALTER TABLE `gastos`
 -- AUTO_INCREMENT de la tabla `inventario`
 --
 ALTER TABLE `inventario`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=335;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=336;
 
 --
 -- AUTO_INCREMENT de la tabla `medidas`
@@ -1581,13 +1619,13 @@ ALTER TABLE `sucursal`
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT de la tabla `ventas`
 --
 ALTER TABLE `ventas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=146;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=147;
 
 --
 -- Restricciones para tablas volcadas
