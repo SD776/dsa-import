@@ -1,9 +1,9 @@
 <?php
-define('BASE_URL', 'http://localhost/proyecto-dsa/');
+define('BASE_URL', 'http://localhost/dsa-import/');
 define('HOST', 'localhost');
 define('USER', 'root');
 define('PASS', '');
-define('DBNAME', 'sistema-mod');
+define('DBNAME', 'sistema');
 define('CHARSET', '');
 define('TITLE', 'DSA Imports');
 define('MONEDA', '$');

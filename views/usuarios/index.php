@@ -158,7 +158,6 @@ return false;
                                 <label class="input-group-text" for="rol"><i class="fa-solid fa-user"></i></label>
                                 <select class="form-select" id="rol" name="rol">
                                     <option value="" selected>Seleccionar</option>
-                                    <option value="1">ADMINISTRADOR</option>
                                     <option value="2">VENDEDOR</option>
                                     <option value="3">GERENTE</option>
                                     <option value="4">COBRANZA</option>

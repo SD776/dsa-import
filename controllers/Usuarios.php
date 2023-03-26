@@ -125,10 +125,6 @@ class Usuarios extends Controller
                 } else {
                     //VERIFICAR SI EXISTE LOS DATOS
                     $verificarci = $this->model->Validar('ci', $ci, 'modificar', $id);
-                    if (empty($verificarci)) {
-                        $verificarcorreo = $this->model->Validar('correo', $correo, 'modificar', 0);
-                        if (empty($verificarcorreo)) {
-                            $verificartlf = $this->model->Validar('telefono', $telefono, 'modificar', $id);
                             if (empty($verificartlf)) {
                                 $data = $this->model->actualizar(
                                     $ci,
@@ -138,6 +134,7 @@ class Usuarios extends Controller
                                     $telefono,
                                     $direccion,
                                     $rol,
+                                    $sucursal,
                                     $id
                                 );
                                 if ($data > 0) {
@@ -145,19 +142,9 @@ class Usuarios extends Controller
                                 } else {
                                     $res = array('msg' => 'ERROR AL ALTUALIZAR', 'type' => 'error');
                                 }
-                            } else {
-                                $res = array('msg' => 'TELÉFONO YA REGISTRADO', 'type' => 'warning');
-                            }
-                        } else {
-                            $res = array('msg' => 'CORREO YA REGISTRADO', 'type' => 'warning');
-                        }
-                    } else {
-                        $res = array('msg' => 'CÉDULA YA REGISTRADA', 'type' => 'warning');
-                    }
                 }
             }
-        } else {
-            $res = array('msg' => 'ERROR DESCONOCIDO', 'type' => 'error');
+        }
         }
         echo json_encode($res, JSON_UNESCAPED_UNICODE);
 

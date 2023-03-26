@@ -5,8 +5,7 @@ class UsuariosModel extends Query{
     }
    public function getUsuarios($estado)
     {
-        $idSucursal = $_SESSION['sucursal'];
-        $sql = "SELECT id, CONCAT(nombre, ' ', apellido) AS nombres, ci, correo, telefono, direccion, rol FROM usuarios WHERE estado = $estado AND id_sucursal = $idSucursal";
+        $sql = "SELECT id, CONCAT(nombre, ' ', apellido) AS nombres, ci, correo, telefono, direccion, rol FROM usuarios WHERE estado = $estado";
         return $this->selectAll($sql);
     }
     public function registrar($ci, $nombres, $apellidos, $correo, 
@@ -37,17 +36,17 @@ class UsuariosModel extends Query{
 
     public function editar($id)
     {
-        $sql = "SELECT id, ci, nombre, apellido, correo, telefono, direccion, perfil, clave, fecha, rol FROM usuarios WHERE id = $id";
+        $sql = "SELECT id, ci, nombre, apellido, correo, telefono, direccion, perfil, clave, fecha, rol, id_sucursal FROM usuarios WHERE id = $id";
         return $this->select($sql);
     }
 
     public function actualizar($ci, $nombres, $apellidos, $correo, 
-    $telefono, $direccion, $rol, $id)
+    $telefono, $direccion, $rol,$sucursal, $id)
     {
         $sql = "UPDATE usuarios SET ci=?, nombre=?, apellido=?, correo=?, telefono=?, 
-        direccion=?, rol=? WHERE id=?";
+        direccion=?, rol=?,id_sucursal=? WHERE id=?";
         $array = array($ci, $nombres, $apellidos, $correo, 
-        $telefono, $direccion, $rol, $id);
+        $telefono, $direccion, $rol,$sucursal, $id);
         return $this->save($sql, $array);
     }
 
